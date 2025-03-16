@@ -1,0 +1,38 @@
+<script>
+    // Function to display cart items
+    function displayCart() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || []; // Get cart from localStorage
+        const cartItemsContainer = document.getElementById('cart-items');
+
+        // If cart is empty
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+            return;
+        }
+
+        let cartHTML = "";
+        // Loop through each cart item and display it
+        cart.forEach(item => {
+            cartHTML += `
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <h3>${item.name}</h3>
+                        <p>${item.price}</p>
+                    </div>
+                </div>
+            `;
+        });
+
+        cartItemsContainer.innerHTML = cartHTML; // Add the cart items to the page
+    }
+
+    // Function to clear the cart
+    function clearCart() {
+        localStorage.removeItem('cart'); // Remove cart from localStorage
+        displayCart(); // Update the cart display
+    }
+
+    // Call displayCart when the page loads
+    window.onload = displayCart;
+</script>

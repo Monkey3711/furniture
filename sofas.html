@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFAS</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+</head>
+<style>
+    body{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    background: url('images/bg.jpg');
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.left{
+    display: inline-block;
+    border: 2px solid black;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img{
+    width: 170px;
+}
+.mid{
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+    border: 2px solid black        
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid yellow;
+
+}
+.btn{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px 9px;
+    background-color: rgb(55, 55, 71);
+    color: white;
+    padding: 3px 14px;
+    border: 2px solid rgb(44, 42, 42);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.sofa-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:30px;
+    margin:170px 50px;
+    text-align: center;
+
+}
+.sofa-buttons div{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+.sofa-buttons div:hover{
+    transform:scale(1.1);
+    color: gray;
+}
+.sofa-button{
+    cursor:pointer;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+.s-button:hover{
+    transform:scale(1.1);
+}
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About us </a></li>
+                <li><a href="#"> Materials</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> Call Us Now </button><button class="btn"> Email us </button>
+        </div>
+    </header>
+    <section class="sofa-buttons">
+        <a href="3+1+1.html">
+            <img src="images/sofas/3+1+1.jpeg" alt="no image" class="s-button" style=" width: 270px;">
+            <div>3+1+1 sofas</div>
+        </a>
+        <a href="cornersofa.html">
+            <img src="images/sofas/corner sofa.jpeg" alt="no image" class="s-button" style=" width: 250px;">
+            <div>corner sofa</div>
+        </a>
+        <a href="rubberwood.html">
+            <img src="images/sofas/rubberwood.jpeg" alt="no image" class="s-button" style=" width: 250px;">
+            <div>rubber wood</div>
+        </a>
+        <a href="teakwood.html">
+            <img src="images/sofas/Teakeood.jpeg" alt="no image" class="s-button" style=" width: 250px;">
+            <div>teak wook</div>
+        </a>
+    </section>
+    
+</body>
+</html>

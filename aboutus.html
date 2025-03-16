@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKSHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+
+<style>
+body{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    background: url('images/bg2.jpeg');
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.left{
+    display: inline-block;
+    border: 2px solid black;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img{
+    width: 170px;
+}
+.mid{
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+    border: 2px solid black     
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid yellow;
+
+}
+.btn{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px 9px;
+    background-color: rgb(44, 44, 65);
+    color: white;
+    padding: 3px 14px;
+    border: 2px solid rgb(44, 42, 42);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: rgb(223, 204, 204);
+}
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+</style>
+    
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="aboutus.html"> About us </a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="#"> Materials</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="cart.html">
+                <button class="btn">Cart</button>
+            </a>
+            <a href="logout.php">
+                <button class="btn">LOG OUT</button>
+            </a>
+        </div>
+    </header>
+    <section class="image-buttons">
+        <a href="sofas.html">
+            <img src="images/3 sofas.jpeg" alt="no image" class="img-button" style=" width:270px;">
+            <div>SOFAS</div>
+        </a>
+        <a href="wardrobe.html">
+            <img src="images/wardrobe.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>wardrobe</div>
+        </a>
+        <a href="Recliners.html">
+            <img src="images/recliners.jpeg" alt="no image" class="img-button" style=" width: 240px;" >
+            <div>Recliners</div>
+        </a>
+        <a href="Beds.html">
+            <img src="images/Beds.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Beds</div>
+        </a>
+        <a href="Officechairs.html">
+            <img src="images/office chairs.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Office chairs</div>
+        </a>
+        <a href="Dinningset.html">
+            <img src="images/dinning sets/4seater dinning set.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>DINNING SETS</div>
+        </a>
+        <a href="Cashtable.html">
+            <img src="images/cash tables.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Cash table</div>
+        </a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>  

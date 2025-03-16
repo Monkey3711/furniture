@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH TABLES</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+</head>
+<style>
+    body{
+        font-family: 'Baloo Bhai'; font-size: 22px;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/bg.jpg');
+        background-size: 75% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .left{
+        display: inline-block;
+        border: 2px solid black;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        width: 170px;
+    }
+    .mid{
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+        border: 2px solid black;        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+    .btn{
+        font-family: 'Baloo Bhai'; font-size: 22px;
+        margin: 0px 9px;
+        background-color: rgb(55, 55, 71);
+        color: white;
+        padding: 3px 14px;
+        border: 2px solid rgb(44, 42, 42);
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: white;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .sofa-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 170px 50px;
+        text-align: center;
+    }
+    .sofa-buttons div{
+        text-align: center;
+        color: black;
+        text-decoration: underline;
+    }
+    .sofa-buttons div:hover{
+        transform: scale(1.1);
+        color: gray;
+    }
+    .s-button{
+        cursor: pointer;
+        transition: transform 0.2s;
+        margin: 10px;
+    }
+    .s-button:hover{
+        transform: scale(1.1);
+    }
+
+    /* NEW CODE FOR THE MATERIALS SECTION */
+    .materials-section {
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+        margin-top: 50px;
+    }
+    .material-item {
+        display: flex;
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center;
+        justify-content: center;
+        width: 80%; /* Control the width of the section */
+        margin-bottom: 30px;
+        border: 2px solid black;
+        padding: 15px;
+        background-color: #f0f0f0;
+    }
+    .material-item img {
+        max-width: 330px; /* Maximum width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between image and info box */
+    }
+
+    /* Special case for the first image - move it down more */
+    .material-item:first-child img {
+        margin-top: 50px; /* Move the first image down */
+    }
+
+    .material-info {
+        text-align: left;
+        max-width: 500px;
+    }
+    .material-info h2 {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+    }
+    .material-info p {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    #about {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin-top: 50px;
+        }
+
+        #about h2 {
+            font-size: 35px;
+            color: black;
+        }
+
+        #about p {
+            font-size: 22px;
+            color: #333;
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="#about"> About us </a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="#"> Materials</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="cart.html">
+                <button class="btn">Cart</button>
+            </a>
+            <button class="btn"> Email us </button>
+        </div>
+    </header>
+
+    <!-- Materials Section -->
+    <section class="materials-section">
+        <div class="material-item">
+            <img src="images/cashtables/4feet.jpeg" alt="Material 1">
+            <div class="material-info">
+                <h2>4 feet cash counter</h2>
+                <p>Description:
+                    4 feet cash table with wooden finsih
+                    Warranty:36 months
+                </p>
+                <p>Price:15000 INR</p>
+                <button onclick="addToCart('images/cashtables/4feet.jpeg','4 feet cash counter', '15,000 INR')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="material-item">
+            <img src="images/cashtables/Stylish.jpeg" alt="Material 2">
+            <div class="material-info">
+                <h2>Stylish black and white counter</h2>
+                <p>Description:
+                    Stylish counter with wood work
+                           </p>
+                <p>Price: 18000 INR</p>
+                <button onclick="addToCart('images/cashtables/Stylish.jpeg','Stylish black and white counter', '18,000 INR')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="material-item">
+            <img src="images/cashtables/5feet.jpeg" alt="Material 2">
+            <div class="material-info">
+                <h2>5 feet cash table</h2>
+                <p>Description:
+                    5 feet cash table with wooden finsih
+                           </p>
+                <p>Price: 15000 INR</p>
+                <button onclick="addToCart('images/cashtables/5feet.jpeg','5 feet cash table', '15,000 INR')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to TAKSHA! We specialize in high-quality furniture, offering a variety of sofas, wardrobes, recliners, beds, office chairs, dining sets, and more. Our goal is to provide stylish and comfortable furniture for every home and office.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

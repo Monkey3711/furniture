@@ -1,0 +1,27 @@
+.image-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+    margin:170px 20px;
+    text-align: center;
+
+}
+.image-buttons div{
+    text-align: center;
+    color: rgb(82, 88, 90);
+    text-decoration: underline;
+}
+.image-buttons div:hover{
+    transform:scale(1.1);
+    color: rgb(102, 19, 19);
+}
+.img-button{
+    cursor:pointer;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+.img-button:hover{
+    transform:scale(1.1);
+}

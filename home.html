@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKSHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+
+<style>
+body{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    background: url('images/bg2.jpeg');
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.left{
+    display: inline-block;
+    border: 2px solid black;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img{
+    width: 170px;
+}
+.mid{
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+    border: 2px solid black;    
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid yellow;
+}
+.btn{
+    font-family: 'Baloo Bhai';font-size: 22px;
+    margin: 0px 9px;
+    background-color: rgb(44, 44, 65);
+    color: white;
+    padding: 3px 14px;
+    border: 2px solid rgb(44, 42, 42);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: rgb(223, 204, 204);
+}
+.navbar li a{
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.banner-container {
+    width: calc(100vw - 200px); /* Prevents the banner from covering the logo */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner img.visible {
+
+    opacity: 1;
+}
+#about {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin-top: 50px;
+        }
+
+        #about h2 {
+            font-size: 35px;
+            color: black;
+        }
+
+        #about p {
+            font-size: 22px;
+            color: #333;
+            max-width: 900px;
+            margin: auto;
+        }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="#about"> About us </a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="#"> Materials</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="cart.html">
+                <button class="btn">Cart</button>
+            </a>
+            <a href="logout.php">
+                <button class="btn">LOG OUT</button>
+            <a href="login.html">
+                <button class="btn">LOG IN</button>    
+            </a>
+        </div>
+    </header>
+
+    <!-- Banner Section (Below Header) -->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="images/banner1.png" class="visible">
+            <img src="images/banner2.png">
+        </div>    
+    </section>
+    <section class="image-buttons">
+        <a href="sofas.html">
+            <img src="images/3 sofas.jpeg" alt="no image" class="img-button" style=" width:270px;">
+            <div>SOFAS</div>
+        </a>
+        <a href="wardrobe.html">
+            <img src="images/wardrobe.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>wardrobe</div>
+        </a>
+        <a href="Recliners.html">
+            <img src="images/recliners.jpeg" alt="no image" class="img-button" style=" width: 240px;" >
+            <div>Recliners</div>
+        </a>
+        <a href="Beds.html">
+            <img src="images/Beds.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Beds</div>
+        </a>
+        <a href="Officechairs.html">
+            <img src="images/office chairs.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Office chairs</div>
+        </a>
+        <a href="Dinningset.html">
+            <img src="images/dinning sets/4seater dinning set.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>DINNING SETS</div>
+        </a>
+        <a href="Cashtable.html">
+            <img src="images/cash tables.jpeg" alt="no image" class="img-button" style=" width: 240px;">
+            <div>Cash table</div>
+        </a>
+    </section>
+   
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to TAKSHA! We specialize in high-quality furniture, offering a variety of sofas, wardrobes, recliners, beds, office chairs, dining sets, and more. Our goal is to provide stylish and comfortable furniture for every home and office.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+</html>
